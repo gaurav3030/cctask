@@ -1,0 +1,103 @@
+:root {
+    --main-color: rgb(16, 106, 241);
+  }
+
+.auth-page{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+.auth-page h2{
+    margin: 1rem 0;
+    
+}
+.auth-page label{
+    font-size: 1.1rem;
+}
+.auth-page input[type="text"],
+.auth-page input[type="email"],
+.auth-page input[type="date"]{
+    display: block;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+.auth-page input[type="submit"]{
+    border: none;
+    font-size: 15px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+ 
+.title{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+a{
+    outline: none;
+    text-decoration: none;
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    border-bottom:1.5px solid #ccc;
+    box-shadow: 0 1px 5px 1px #ccc;
+
+}
+.logo{
+    float: left;
+    width: auto;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    color: var(--main-color);
+}
+.right{
+    float: right;
+}
+.profile{
+    display: inline-block;
+    background: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.newbtn{
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding: 22px 0;
+    width: 150px;
+    margin-left: 10px;
+    background: var(--main-color);
+    vertical-align: top;
+    font-weight: bold;
+
+}
+.newbtn p{
+    text-align: center;
+}

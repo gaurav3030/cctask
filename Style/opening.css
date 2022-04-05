@@ -1,0 +1,274 @@
+/* NAVBAR */
+
+/* #navbar div{
+    width: -4%;
+} */
+
+:root{
+    --navbar-height:400px;
+    --main-color: rgb(16, 106, 241);
+}
+#logo img{
+    height: 100px;
+    width: 126px;
+}
+
+#navbar{
+    /* background-color: rgba(red, green, blue, .6); */
+    
+    display: flex;
+    align-items: center;
+    position: default;
+    top: 0px;
+    height: 97px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.item a{
+    display: block;
+    padding: 3px 23px;
+    /* border-radius:20px ; */
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    z-index: -1;
+}
+
+#navbar ul li a:hover{
+    color: rgb(124, 169, 236);
+    background-color: black;
+    font-weight: bold;
+}
+
+.sign_up a{
+    margin-left: 777px;
+    margin-right: 5px;
+    border: 2px solid black;
+    color: rgb(124, 169, 236);
+}
+.log_in {
+    text-decoration-color: blueviolet;
+}
+.fixed-nav nav{
+    position: fixed;
+    width: 100%;
+    opacity: 1;
+    background-color:  rgba(149, 184, 236, 0.7);
+}
+/* HEADING SECTION*/
+
+.heading{
+    margin-top: 0px;
+   
+}
+#heading h1 {
+    font-size: 43px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#heading h2{
+    font-size: 27px;
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+#heading::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    opacity: 0.6;
+}
+ 
+/* LETS GET STARTED */
+.btn{
+    background-color:white;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 390px;
+    text-align: center;
+    color:  rgb(149, 184, 236);
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: rgb(149, 184, 236);;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bg_image {
+    height: 370px;
+    width: 1130px;
+}
+
+
+/* FEATURES */
+
+#features{
+    display: flex;
+    align-self: center;
+}
+.feature-container h1{
+    text-align: center;
+    font-size: 35px;
+}
+#features .box {
+    /* border: 2px solid black; */
+    margin: 10px 124px;
+    text-align: center;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color:  rgba(149, 184, 236, 0.9);
+    height: 350px;
+    width: 102%;
+    position: default;
+    font-weight: bolder;
+}
+#features .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 2px;
+    border-radius: 21%;
+
+}
+#features .box button{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    background-color:rgb(149, 184, 236, 0.9);
+}
+
+.box h2{
+    margin: 1px 7px;
+    font-size: 23px;
+    color: white;
+}
+
+
+/* how to use */
+.use-container{
+    margin:5px 0px 11px 0px;
+    display: block;
+}
+.use h1{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+}
+.use{
+    background-color: rgba(153, 149, 149, 0.1);
+}
+
+.use-containt p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 550px;
+}
+
+/* task bar */
+.taskBar{
+    height: 20px;
+}
+.taskBar p{
+    display: block;
+    height: 80.5px;
+    width: 88.5px;
+    position: relative;
+    background-color:rgba(124, 169, 236,0); 
+    text-align: center;
+    font-weight: bold;
+    left: 122px;
+    top: -106px;
+    opacity: .7;
+    border-radius: 50%;
+}
+@keyframes task{
+    from {left: 150px;}
+    to {left: 414px;}
+}
+@keyframes task1{
+    from {left: 414px;}
+    to {left: 706px;}
+}
+@keyframes task2{
+    from {left: 706px;}
+    to {left: 998px;}
+}
+@keyframes task3{
+    from {left: 998px;}
+    to {left: 1290px;}
+}
+.use:hover .taskBar p{
+    display: block;
+    animation-timing-function: ease-in;
+    animation: task 1s linear 2s 1 normal forwards,  task1 1s linear 4s 1 normal forwards, task2 1s linear 6s 1 normal forwards, task3 1s linear 8s 1 normal forwards;
+    background-color:white;
+    opacity: 0.3; 
+}
+
+.taskName{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: rgba(124, 169, 236, 0.8);
+    height: 100px;
+}
+
+.taskName img{
+    height: 60px;
+    width: 60px;
+    margin: 2px 100px;
+    padding: 10px 14px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.dis img{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+/* TOP BUTTON
+#myBtn {
+    display: none;
+    position: block;
+    bottom: 0px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(124, 169, 236);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  } */

@@ -1,0 +1,150 @@
+:root {
+    --main-color: rgb(16, 106, 241);
+  }
+
+
+.teams{
+    display: block;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+}
+.team{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.teamname{
+    background-color: var(--main-color);
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    
+}
+.teamname h4{
+   margin-left: 20px; 
+}
+.teammembers{
+    width: 100%;
+    display: none;
+}
+.active, .teamname:hover {
+    background-color:  rgba(16, 106, 241,0.7);
+  }
+
+.user{
+    display: flex;
+    justify-content: flex-start;
+    
+    background-color: #ededed;
+}
+.val{
+    width: 33%;
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.modal-content h1{
+    display: block;
+    margin:auto ;
+    text-align: center;
+    color: #147DF3;
+}
+.addform{
+    width: 50%;
+    display: block;
+    margin:50px auto;
+}
+.addform input[type="text"],input[type="date"]{
+    width: 90%;
+    display: block;
+    margin: 10px auto 30px auto;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.addform label{
+    font-size: 20px;
+    width: 90%;
+    margin:10px auto;
+    display: block;
+}
+.addform input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #147DF3;
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.newuserbtn{
+    position: absolute;
+    right:20px;
+    font-size: 25px;
+    top: 5px;
+    color: white;
+}
+.userform{
+    width: 100%;
+    position: relative;
+}
+.userform input[type="text"]{
+    font-size: 20px;
+    width: 50%;
+    margin: 10px 0px;
+    margin-left: 20px;
+    
+}
+.userform input[type="submit"]{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 15px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px;
+}

@@ -1,0 +1,240 @@
+:root {
+    --main-color: rgb(16, 106, 241);
+  }
+html{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+a{
+    outline: none;
+    text-decoration: none;
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    border-bottom:1.5px solid #ccc;
+    box-shadow: 0 1px 5px 1px #ccc;
+
+}
+.logo{
+    float: left;
+    width: auto;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    color: var(--main-color);
+}
+.right{
+    float: right;
+}
+.profile{
+    display: inline-block;
+    background: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.newbtn{
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding: 22px 0;
+    width: 150px;
+    margin-left: 10px;
+    background: var(--main-color);
+    vertical-align: top;
+    font-weight: bold;
+
+}
+.newbtn p{
+    text-align: center;
+}
+.sidebar{
+    float: left;
+    
+    height: 100%;
+    width: 15vw;
+    background-color: white;
+    border-right:1.5px solid #ccc;
+}
+.teamtoggle{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.toggle{
+    display: inline-block;
+    background: white;
+    padding: 10px 0;
+    width: 10vh;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid var(--main-color);
+}
+.toggle.active{
+    background: var(--main-color);
+    color: white;
+}
+.content{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: #dddddd77;
+    
+}
+.container{
+    float: left;
+    height: 100%;
+    width: 84vw;
+    background-color: transparent;
+    
+    justify-content: center;
+    
+}
+#kanban{
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+#todo{
+    width: 100%;
+    height: 100%;
+    display: none;
+    
+}
+.status{
+    width: 20%;
+    margin: 5px 10px;
+}
+.header{
+    display: block;
+    width: 90%;
+    background: white;
+    padding: 5%;
+    border: 1px solid #ddd;
+    border-top: 4px solid var(--main-color);
+    position: relative;
+    
+}
+.header p{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.remain{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    color: #aaa;
+    
+}
+.addbtn{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    color: #aaa;
+    
+}
+.task{
+    display: block;
+    width: 90%;
+    background: white;
+    padding: 5%;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.tasktitle{
+    display: block;
+}
+.taskdesc{
+    display: block;
+    color: #666;
+    font-size: 15px;
+}
+.assigned{
+    width: 1005;
+}
+.person{
+    display: inline-block;
+    background: #fff;
+    width: 25px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    padding: 4.5px 0 ;
+    font-size: 16px;
+    border: 2px solid rgb(16, 106, 241);
+    font-weight:bolder;
+    color:#777;
+    position:relative;
+}
+.person .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.person:hover .tooltiptext {
+  visibility: visible;
+}
+.statusbtn{
+    background: var(--main-color);
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    width: 90%;
+
+}
+input{
+    outline: none;
+    border: none;
+    
+}
+.adduserbtn{
+    display: block;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0;
+    width: 90%;
+    margin: 10px auto;
+    background: var(--main-color);
+    font-weight: bold;
+}
+.adduserbtn p{
+    text-align:center;
+}
